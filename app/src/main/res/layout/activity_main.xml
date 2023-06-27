@@ -2,43 +2,68 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#359AA3"
+    android:id="@+id/base_theme"
+    style="@style/Theme_light"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageMario"
+        style="@style/Theme_light"
         android:layout_width="203dp"
         android:layout_height="204dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="#3599A2"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FAFFFF"
         android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/paper_mario2" />
+        app:layout_constraintEnd_toEndOf="@+id/imageBlock"
+        app:layout_constraintStart_toStartOf="@+id/imageBlock"
+        app:layout_constraintTop_toBottomOf="@+id/imageBlock"
+        app:srcCompat="@drawable/mario_salta"
+        tools:ignore="VisualLintBounds" />
 
     <Button
         android:id="@+id/buttonJump"
-        android:layout_width="140dp"
-        android:layout_height="67dp"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="235dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#F34F26"
         android:onClick="onAnimateButtonClick"
         android:text="@string/jump"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageMario" />
+        app:layout_constraintEnd_toEndOf="@+id/imageMario"
+        app:layout_constraintStart_toStartOf="@+id/imageMario"
+        app:layout_constraintTop_toBottomOf="@+id/imageMario"
+        app:layout_constraintVertical_bias="0.46"
+        tools:ignore="VisualLintBounds,VisualLintButtonSize" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageBlock"
+        style="@style/Theme_light"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:backgroundTintMode="add"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/theme_mode"
+        app:srcCompat="@drawable/caja_mario"
+        tools:background="@android:color/transparent"
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck,VisualLintBounds" />
+
+    <Switch
+        android:id="@+id/theme_mode"
+        style="@style/Theme_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:minHeight="48dp"
+        android:text="@string/theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/caja"
-        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck" />
+        tools:ignore="UseSwitchCompatOrMaterialXml,VisualLintBounds" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

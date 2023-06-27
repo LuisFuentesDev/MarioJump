@@ -1,9 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Ejercicio7" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">67dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">#F8E32C</item>
     </style>
 
     <style name="Theme.Ejercicio7" parent="Base.Theme.Ejercicio7" />
+
 </resources>

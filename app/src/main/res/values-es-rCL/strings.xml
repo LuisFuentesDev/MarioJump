@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ejercicio7</string>
+    <string name="jump">Saltar</string>
+    <string name="todo">todo</string>
+    <string name="light_mode">Modo Claro</string>
+    <string name="theme">Tema</string>
+</resources>

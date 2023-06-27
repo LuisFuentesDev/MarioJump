@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Ejercicio7</string>
-    <string name="jump">Jump</string>
-    <string name="todo">TODO</string>
+    <string name="app_name" translatable="false">Ejercicio7</string>
+    <string name="jump" translatable="false">Jump</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="light_mode" translatable="false">Light mode</string>
+    <string name="theme" translatable="false">theme</string>
 </resources>
